@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "easysteer-parity-plugin"
+version = "0.1.0"
+description = "Post-block low-rank adapter steering algorithm for the EasySteer/vLLM steering path"
+requires-python = ">=3.10"
+
+[project.entry-points."vllm.general_plugins"]
+steerling_adapter = "easysteer_parity_plugin:register"
+
+[tool.setuptools.packages.find]
+include = ["easysteer_parity_plugin*"]
