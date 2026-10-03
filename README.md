@@ -156,9 +156,3 @@ python scripts/_ls_bundle_sim.py bundles/ls_skills
 
 # 5) ALFWorld seen 140 (generation-only injection) - see section above
 ```
-
-Reference numbers reproduced by this pipeline (200-item SFT val split):
-aligned-round activation offsets 0.9843 token accuracy / loss 0.0453 vs
-LatentSkill LoRA 0.9921 / 0.0480 (frozen base 0.5559 / 5.1172); ALFWorld seen
-overall 41.4% (protocol-matched round) vs base 42.9%; SearchQA all-7 EM 35.7
-vs base 31.6.
